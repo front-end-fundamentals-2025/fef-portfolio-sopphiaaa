@@ -417,7 +417,7 @@ color: #ffffbe;
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('/images/home.webp');
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('fef-portfolio-sopphiaaa/images/home.webp');
     background-size: cover;
     background-position: center;
     color: white;
@@ -518,4 +518,5 @@ color: #ffffbe;
         margin-top: 0.5rem;
     }
 }
+
 
