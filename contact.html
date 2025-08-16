@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Sophia Oliva</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+<header>
+    <h1 class="logo">Sophia Oliva</h1>
+<button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+    <nav>
+        <ul id="headlist">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="contact.html"class="nav-link">Contact</a></li>
+            <li><button id="darkModeToggle" aria-label="Toggle dark mode">🌓</button></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <section class="contact-section">
+            <div class="contact-info bounce-in">
+                <h2>Get In Touch</h2>
+                <p>Feel free to reach out for internships and collaborations...</p>
+                <p>or just to say hello!</p>
+                
+                <div class="info-details">
+                    <h3>Contact Information</h3>
+                    <p><strong>Email:</strong> sophiaoliva@live.com</p>
+                    <p><strong>Phone:</strong> (+46) 793008637</p>
+                    <p><strong>Location:</strong> Västra Götaland, Sweden</p>
+                    
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/sophia-oliva/" class="social-icon">LinkedIn</a>
+                        <a href="https://github.com/sopphiaaa" class="social-icon">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <form id="contactForm" class="form-animate">
+                    <h3>Send Me a Message</h3>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sophia Oliva. All rights reserved.</p>
+    </footer>
+        <!-- Responsive Adjustments -->
+    <script>
+      const toggle = document.querySelector(".menu-toggle");
+      const nav = document.getElementById("headlist");
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details | Sophia Oliva</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+<header>
+    <h1 class="logo">Sophia Oliva</h1>
+<button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+    <nav>
+        <ul id="headlist">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="contact.html"class="nav-link">Contact</a></li>
+            <li><button id="darkModeToggle" aria-label="Toggle dark mode">🌓</button></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <section class="project-detail">
+            <div class="project-header">
+                <h2 class="slide-in-from-left">SeenIt</h2>
+                <p class="project-tags">Web Development, UI Design, Ux</p>
+            </div>
+            
+            <div class="project-content">
+                <div class="project-gallery">
+                    <img src="images/seenit.jpg" alt="seenit" class="main-image">
+                    <div class="thumbnail-container">
+                        <img src="images/seenit.jpg" alt="SeenIt Homepage" class="thumbnail">
+                        <img src="images/searchpage.jpg" alt="Search Page" class="thumbnail">
+                        <img src="images/loginpage.jpg" alt="Login Page" class="thumbnail">
+                    </div>
+                </div>
+                
+                <div class="project-description">
+                    <h3>About This Project</h3>
+                    <p>This platform was designed and developed as part of a university course. The website offers the possibility to search movie/tv series and actors. Ratings together with a short description are avaiable. The database was implemented with TMDB API and the login system is supported woth Firebase. </p>
+                    <p>The project as a further goal to implement a review system and a working community.</p>
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li>Responsive design that works on all devices</li>
+                        <li>Custom movie/actor/tv serie filtering and search</li>
+                        <li>Integrated sign up and login</li>
+                    </ul>
+                    
+                    <h3>Technologies Used</h3>
+                    <div class="tech-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Firebase</span>
+                    </div>
+                    
+                    <a href="https://web-design-project-2025.github.io/web-design-project-group-19/index.html" class="btn">Visit Live Site</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sophia Oliva. All rights reserved.</p>
+    </footer>
+        <!-- Responsive Adjustments -->
+    <script>
+      const toggle = document.querySelector(".menu-toggle");
+      const nav = document.getElementById("headlist");
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
+
+    <script src="js/darkmode.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

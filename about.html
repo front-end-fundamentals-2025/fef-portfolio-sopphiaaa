@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Sophia Oliva</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+<header>
+    <h1 class="logo">Sophia Oliva</h1>
+<button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+    <nav>
+        <ul id="headlist">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About Me</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="contact.html"class="nav-link">Contact</a></li>
+            <li><button id="darkModeToggle" aria-label="Toggle dark mode">🌓</button></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <section class="about-section">
+            <div class="about-content">
+                <div class="about-text spin-in">
+                    <h2>About Me</h2>
+                    <p>Class '02. Born and raised in Italy, I carry with me a bigger cultural baggage due to dominican roots. Currently based in Sweden.</p>
+                    <p>Social, positive student passionate about sciences and UX/design.</p>
+                    <p>Experienced in leading initiatives and fostering connections. Eager to learn and grow professionally!</p>
+                    <p>When I'm not coding or designing, you can find me in the kitchen cooking for friends.</p>
+                </div>
+                <div class="about-image hover-rotate">
+                    <img src="images/profilepng.png" alt="Profile Picture">
+                </div>
+            </div>
+            
+            <div class="skills">
+                <h3>My Skills</h3>
+                <div class="skills-list">
+                    <div class="skill-li">UI/UX Design</div>
+                    <div class="skill-li">Front-end Development</div>
+                    <div class="skill-li"> Figma</div>
+                    <div class="skill-li">JavaScript</div>
+                    <div class="skill-li">CSS</div>
+                    <div class="skill-li">HTML</div>
+                    <div class="skill-li">Photshop</div>
+                    <div class="skill-li">InDesign</div>
+                    <div class="skill-li">Illustrator</div>
+                    <div class="skill-li">Canva</div> 
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sophia Oliva. All rights reserved.</p>
+    </footer>
+            <!-- Responsive Adjustments -->
+    <script>
+      const toggle = document.querySelector(".menu-toggle");
+      const nav = document.getElementById("headlist");
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
+
+    <script src="js/darkmode.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects | Sophia Oliva</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+<header>
+    <h1 class="logo">Sophia Oliva</h1>
+<button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+    <nav>
+        <ul id="headlist">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="contact.html"class="nav-link">Contact</a></li>
+            <li><button id="darkModeToggle" aria-label="Toggle dark mode">🌓</button></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <section class="projects-section">
+            <h2 class="section-title">My Projects</h2>
+            
+            <div class="projects-grid">
+                <div class="project-card scale-up">
+                    <img src="images/seenit.jpg" alt="SeenIt">
+                    <div class="project-info">
+                        <h3>SeenIt</h3>
+                        <p>PA movie search website. TMDB API integration for search functionality</p>
+                        <a href="project-detail.html" class="btn">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="project-card scale-up">
+                    <img src="images/norrskogensvintage.jpg" alt="Norrskogens">
+                    <div class="project-info">
+                        <h3>Norrskogens</h3>
+                        <p>Personalized label intended for liquor bottle. Leisure project.</p>
+                        <a href="project-detail.html" class="btn">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="project-card scale-up">
+                    <img src="images/skosexsneakpeek.jpg" alt="SköSex">
+                    <div class="project-info">
+                        <h3>Club night promoting for Skövde Sexmasteri</h3>
+                        <p>Instagram post designs to market student social event at Kårhuset Bolougner.</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="project-card scale-up">
+                    <img src="images/lumimenu.jpg" alt="Lumi's Opening Menu">
+                    <div class="project-info">
+                        <h3>Lumi's restaurant - opening menu'</h3>
+                        <p>Opening menu' designed for Lumi's restaurant (Italy).</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="project-card scale-up">
+                    <img src="images/Villa Aurea.jpg" alt="Villa Aurea">
+                    <div class="project-info">
+                        <h3>Villa Aurea's Instagram Carrousel</h3>
+                        <p>Informative carrousel for Villa Aurea. It contains basic welcoming information.</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sophia Oliva. All rights reserved.</p>
+    </footer>
+        <!-- Responsive Adjustments -->
+    <script>
+      const toggle = document.querySelector(".menu-toggle");
+      const nav = document.getElementById("headlist");
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
+    <script src="js/darkmode.js"></script>
+</body>
+</html>

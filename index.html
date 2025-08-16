@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sophia Oliva</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+<header>
+    <h1 class="logo">SOPHIA OLIVA</h1>
+<button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+    <nav>
+        <ul id="headlist">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About Me</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="contact.html"class="nav-link">Contact</a></li>
+            <li><button id="darkModeToggle" aria-label="Toggle dark mode">🌓</button></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2 class="slide-in">Welcome to my personal page!</h2>
+                <p class="fade-in">Graphic Design and Web Devolpment student on her learning journey.</p>
+                <a href="projects.html" class="btn pulse">View My Work</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sophia Oliva. All rights reserved.</p>
+    </footer>
+        <!-- Responsive Adjustments -->
+    <script>
+      const toggle = document.querySelector(".menu-toggle");
+      const nav = document.getElementById("headlist");
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/darkmode.js"></script>
+</body>
+</html>

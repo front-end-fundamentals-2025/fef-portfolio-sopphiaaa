@@ -1,0 +1,521 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #737c21;
+    background-color: #ffffbe;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #600018; 
+    color: #f8ffb9;
+}
+
+
+.logo {
+    margin: 0;
+    color: #ffffbe; 
+}
+
+.dark-mode .logo {
+    color: #ffffbe; 
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #737c21; 
+    position: relative;
+
+        #headlist {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+}
+
+.dark-mode header {
+    background-color: #600018; 
+}
+
+
+
+/* Navigation Links */
+.nav-link {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #ffffbe;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.dark-mode .nav-link {
+    border-color: #737c21; 
+}
+
+.nav-link:hover {
+    background-color: #800020; 
+    color: white;
+}
+
+.dark-mode .nav-link:hover {
+    background-color: #737c21; 
+    color: white;
+}
+
+/* Dark Mode Toggle Button */
+#darkModeToggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    color: #800020; 
+    transition: transform 0.3s;
+}
+
+.dark-mode #darkModeToggle {
+    color: #737c21;
+}
+
+#darkModeToggle:hover {
+    transform: rotate(30deg);
+}
+
+
+nav ul li:not(:last-child) a:not(.nav-link) {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.dark-mode nav ul li a:not(.nav-link) {
+    color: #f5f5dc;
+}
+
+nav a:hover {
+    color: #800020; 
+}
+
+.dark-mode nav a:hover {
+    color: #c68c53; 
+}
+
+.btn {
+    display: inline-block;
+    background-color: #800020; 
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.dark-mode .btn {
+    background-color: #737c21; 
+}
+
+.btn:hover {
+    background-color: #600018;
+}
+
+.dark-mode .btn:hover {
+    background-color: #c68c53;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: #ffffbe;
+    background-color: #737c21;
+    margin-top: auto;
+}
+
+.dark-mode footer {
+    background-color: #600018;
+}
+
+/* About Page Styles */
+.about-section {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+    color: #c68c53;
+}
+
+.dark-mode .about-text {
+
+color: #ffffbe;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 70%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.skills {
+    display: flex;
+    height: max-content;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.skills-list {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+}
+
+.skill-li {
+    background-color: #800020; 
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: white;
+}
+
+.dark-mode .skill-li {
+    background-color: #c68c53; 
+}
+
+/* Contact Page Styles */
+.contact-section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-form {
+    background-color: #ffffbe;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px #c68c53;
+}
+
+.dark-mode .contact-form {
+    background-color: #600018;
+    box-shadow: #c68c53;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ffffbe;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.dark-mode .form-group input,
+.dark-mode .form-group textarea {
+    background-color: #ffffbe;
+    color: #737c21;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-icon {
+    padding: 0.5rem 1rem;
+    background-color: #600018;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.dark-mode .social-icon {
+    background-color: #737c21
+}
+
+/* Projects Page Styles */
+.projects-section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #800020; 
+}
+
+.dark-mode .section-title {
+    color: #ffffbe;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: #ffffbe;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.dark-mode .project-card {
+    background-color: #800020;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+.project-info h3 {
+    margin-top: 0;
+    color: #800020; 
+}
+
+.dark-mode .project-info h3 {
+    color: #c68c53; 
+}
+
+/* Project Detail Styles */
+.project-detail {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.project-tags {
+    color: #c68c53;
+    font-style: italic;
+}
+
+.dark-mode .project-tags {
+    color: #737c21;
+}
+
+.project-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.project-gallery, .project-description {
+    flex: 1;
+    min-width: 300px;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: opacity 0.3s ease;
+}
+
+.thumbnail-container {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+}
+
+.thumbnail {
+    width: 100px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.tech-tags span {
+    background-color: #600018; 
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.dark-mode .tech-tags span {
+    background-color: #737c21;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('/images/home.webp');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Mobile Menu Styles */
+
+.menu-toggle {
+  display: none;
+}
+
+ 
+
+.dark-mode .menu-toggle {
+    color: #737c21;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+ #headlist.active {
+    display: flex;
+  }
+.menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #800020;
+}    
+    ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #737c21;
+        padding: 1rem;
+        z-index: 1000;
+    }
+    
+    .dark-mode nav ul {
+        background-color: #800020;
+    }
+    
+    nav ul.active {
+        display: flex;
+    }
+
+     
+    header  {
+
+        #headlist {
+        display: none;
+    }
+.collapsed {
+    visibility: hidden;
+}
+.opened{
+    visibility: visible;
+}
+    }  
+
+
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-link {
+        display: block;
+        width: 100%;
+        margin-bottom: 0.5rem;
+        padding: 0;
+    }
+    
+    #darkModeToggle {
+        margin-top: 0.5rem;
+    }
+}
+
